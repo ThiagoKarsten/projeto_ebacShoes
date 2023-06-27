@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img{
+    height: 300px;
+    margin-right: 32px;
+}
+
+div h1{
+    font-style: italic;
+    color: white;
+    font-size: 32px;
+}
+
+header{
+    padding: 20px 0;
+    background-color: rgba(4, 0, 255, 0.767);
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 40px 0;
+}
+
+section .container{
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section h2{
+    margin-bottom: 12px;
+    color: rgb(0, 110, 255);
+    
+}
+
+.linha{
+    border-bottom: 3px solid rgb(0, 110, 255);
+    margin-bottom: 34px;
+}
+
+.linha2{
+    border-bottom: 3px solid grey;
+    margin-bottom: 34px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.lista-tenis li{
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.lista-tenis{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.lista-tenis li img{
+    height: 200px;
+    max-width: 100%;
+}
+
+.lista-tenis li h3{
+    margin: 8px 0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 90%;
+    }
+
+    .container img{
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+    .lista-tenis{
+        display: block;
+    }
+
+    div > h2{
+        margin-top: 30px;
+    }
+
+    .container > h2{
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+    .container img{
+        margin-right: 0;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    div > h2{
+        margin-top: 30px;
+    }
+
+    div > p{
+        font-size: 20px;
+    }
+
+    .lista-tenis{
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .lista-tenis li img{
+        height: 70%;
+    }
+
+    .container li{
+        max-width: 100%;
+    }
+    
+}
+
